@@ -3,8 +3,6 @@
  * Author: Arjan Singh
  * NetID: as2995
  *
- * Acknowledge here any contributions made to your solution that
- * did not originate from you or from the course staff:
  * My implementation for New_Map is heavily derived from the implementation
  * of List.map, which I read in the List module's source code.
  *
@@ -12,8 +10,8 @@
  * from the internet: http://chris.com/ascii/index.php?art=creatures/monsters
  *
  *
- *NOTE: PLEASE MAKE THE COMMAND WINDOW AS BIG AS POSSIBLE BEFORE YOU
- *PLAY MY ADVENTURE GAME
+ * NOTE: PLEASE MAKE THE COMMAND WINDOW AS BIG AS POSSIBLE BEFORE YOU
+ * PLAY MY ADVENTURE GAME
  *
  *)
 
