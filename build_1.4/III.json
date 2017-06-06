@@ -1,0 +1,1137 @@
+{
+	"rooms": [
+
+		{
+		"id": "Start 1",
+		"description":
+"You awake. You look around to see nothing but darkness, save a dim light.
+Will you move toward it?",
+		"points": 0,
+		"exits": [{
+			"direction": "yes",
+			"room_id": "Start 2"
+		},
+		{
+			"direction": "no",
+			"room_id": "Start 1 No"
+		}],
+		"treasure": []
+	},
+
+
+
+	{
+		"id": "Start 1 No",
+		"description":
+"You are in the darkness.
+You don't see anything except the light.
+Will you move toward the light?",
+		"points": 0,
+		"exits": [{
+			"direction": "yes",
+			"room_id": "Start 2"
+		},
+		{
+			"direction": "no",
+			"room_id": "Start 1 No"
+		}],
+		"treasure": []
+	},
+
+	{
+		"id": "Start 2",
+		"description": "The light is getting closer. Will you keep going?",
+		"points": 0,
+		"exits": [{
+			"direction": "yes",
+			"room_id": "Abyss Bridge"
+		},
+		{
+			"direction": "no",
+			"room_id": "Start 2 No"
+		}],
+		"treasure": []
+	},
+
+	{
+		"id": "Start 2 No",
+		"description":
+"You are in the darkness.
+You don't see anything except the light.
+Will you move toward the light?",
+		"points": 0,
+		"exits": [{
+			"direction": "yes",
+			"room_id": "Abyss Bridge"
+		},
+		{
+			"direction": "no",
+			"room_id": "Start 2 No"
+		}],
+		"treasure": []
+	},
+
+	{
+		"id": "Abyss Bridge",
+		"description":
+"In what seemed like a flash, you find yourself on a towering structure
+surrounded by an abyss of unknown depth on all sides, save two narrow
+bridges. Although it is fairly bright, you find it hard to discern where,
+exactly, the bridges lead, due to a thick fog that carpets the region.
+One of the bridges starts out to your left, while the other starts
+straight ahead of you. Looking around further, you see a stone tile on the
+ground, just big enough for both your feet to barely fit. The tile bears the
+sigil belonging to the School of the Wolf.",
+		"points": 5,
+		"exits": [
+			{"direction": "left", "room_id": "Cross Roads"},
+			{"direction": "left bridge", "room_id": "Cross Roads"},
+			{"direction": "bridge left", "room_id": "Cross Roads"},
+			{"direction": "ahead", "room_id": "Cell Bridge"},
+			{"direction": "straight", "room_id": "Cell Bridge"},
+			{"direction": "forward", "room_id": "Cell Bridge"},
+			{"direction": "ahead bridge", "room_id": "Cell Bridge"},
+			{"direction": "straight bridge", "room_id": "Cell Bridge"},
+			{"direction": "forward bridge", "room_id": "Cell Bridge"},
+			{"direction": "in front", "room_id": "Cell Bridge"},
+			{"direction": "bridge in front", "room_id": "Cell Bridge"},
+			{"direction": "front", "room_id": "Cell Bridge"},
+      {"direction": "left", "room_id": "Cross Roads"},
+      {"direction": "to left bridge", "room_id": "Cross Roads"},
+      {"direction": "to the left bridge", "room_id": "Cross Roads"},
+      {"direction": "straight", "room_id": "Cell Bridge"},
+      {"direction": "forward", "room_id": "Cell Bridge"},
+      {"direction": "to ahead bridge", "room_id": "Cell Bridge"},
+      {"direction": "to straight bridge", "room_id": "Cell Bridge"},
+      {"direction": "to forward bridge", "room_id": "Cell Bridge"},
+      {"direction": "in front", "room_id": "Cell Bridge"},
+      {"direction": "to bridge in front", "room_id": "Cell Bridge"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Cross Roads",
+		"description":
+"Crossing the bridge, you find yourself lead to a region covered in dense fauna.
+The ground is moist, muddy and covered in foliage and moss. Shrubs and
+Trees, in the region, have thrived such that sun light barely penetrates.
+The heat and humidity is unbearable. You feel dehydrated and dizzy. As you look
+around, you see footprints. As you go to investigate, you hear a faint sound of
+leaves rustling behind you. Will you follow the footprints or the sound?",
+		"points": 5,
+		"exits": [
+			{"direction": "footprints", "room_id": "Brook"},
+			{"direction": "follow footprints", "room_id": "Brook"},
+      {"direction": "follow the footprints", "room_id": "Brook"},
+			{"direction": "footprints follow", "room_id": "Brook"},
+			{"direction": "sound", "room_id": "Cell Sound"},
+			{"direction": "follow sound", "room_id": "Cell Sound"},
+      {"direction": "follow the sound", "room_id": "Cell Sound"},
+			{"direction": "sound follow", "room_id": "Cell Sound"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Cell Bridge",
+		"description":
+"As you reach the end of the bridge, you feel a sharp prick on the side of your
+neck, behind your ear. Everything turns black.
+
+You wake up. You feel that a considerable amount of time has passed.
+Looking around, you realize that you are in a cell; walls on three sides and
+bars on the fourth. It is dark except for light from a torch in the corridor,
+the cell faces. Peeking out, it seems like you are in one cell, in a row of many.
+Looking behind, you see a cracks in the wall. Touching the wall, you feel it
+crumbling. A strong impact will create an opening large enough for you to escape",
+		"points": 0,
+		"exits": [
+			{"direction": "escape", "room_id": "Outpost"},
+			{"direction": "break", "room_id": "Outpost"},
+			{"direction": "break wall", "room_id": "Outpost"},
+			{"direction": "hit", "room_id": "Outpost"},
+			{"direction": "hit wall", "room_id": "Outpost"},
+			{"direction": "punch wall", "room_id": "Outpost"},
+			{"direction": "punch", "room_id": "Outpost"},
+			{"direction": "kick wall", "room_id": "Outpost"},
+			{"direction": "kick", "room_id": "Outpost"},
+			{"direction": "shoulder push wall", "room_id": "Outpost"},
+			{"direction": "shoulder push", "room_id": "Outpost"},
+			{"direction": "break out", "room_id": "Outpost"},
+			{"direction": "break and escape", "room_id": "Outpost"},
+			{"direction": "get out", "room_id": "Outpost"},
+			{"direction": "out", "room_id": "Outpost"},
+			{"direction": "leave", "room_id": "Outpost"},
+			{"direction": "strike", "room_id": "Outpost"},
+			{"direction": "strike wall", "room_id": "Outpost"},
+			{"direction": "bust out", "room_id": "Outpost"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Brook",
+		"description":
+"You follow the footprints through the overgrown shrubs. They lead you through
+an especially dense swath of the forest cover; the trees are closing in, and
+the sounds of the fauna of the region are getting louder.
+
+The footprints end, and leave you by the shore of a river. Gazing down river,
+you spot a wreckage, not too far from where you stand. You go toward it to
+enquire. The boat was carrying some sort of cargo; a fact you deduced from the
+large wooden crates washed ashore. Most crates have been hastily opened, as you
+can tell from the damage along the lids, and the contents, emptied.
+
+As you look around further, you are halted still by the return of the rustling
+you heard previously, but this time, seemingly, much closer. You start to feel
+a gust of air hit your neck, and fear what may be behind you. Will you turn
+around to face what stalks you, or run?",
+		"points": 0,
+		"exits": [
+			{"direction": "run", "room_id": "Cell Run"},
+			{"direction": "run away", "room_id": "Cell Run"},
+			{"direction": "flee", "room_id": "Cell Run"},
+			{"direction": "escape", "room_id": "Cell Run"},
+			{"direction": "away", "room_id": "Cell Run"},
+			{"direction": "turn", "room_id": "Cell Turn"},
+			{"direction": "turn around", "room_id": "Cell Turn"},
+			{"direction": "look", "room_id": "Cell Turn"},
+			{"direction": "look at him", "room_id": "Cell Turn"},
+      {"direction": "face him", "room_id": "Cell Turn"},
+      {"direction": "face her", "room_id": "Cell Turn"},
+			{"direction": "look at her", "room_id": "Cell Turn"},
+      {"direction": "look at him", "room_id": "Cell Turn"},
+      {"direction": "face it", "room_id": "Cell Turn"},
+      {"direction": "face what stalks me", "room_id": "Cell Turn"},
+      {"direction": "look at what stalks me", "room_id": "Cell Turn"},
+      {"direction": "look at it", "room_id": "Cell Turn"}
+		],
+		"treasure": []
+	},
+
+
+	{"id": "Cell Run",
+		"description":
+"You start running as fast as you can, away from the wreckage. As you run, your
+foot catches on a low lying vine and you hit the ground, face down. As you try
+to get on your feet, You feel a sharp blow to the back of your
+head. Everything turns black.
+
+You wake up. You feel that a considerable amount of time has passed.
+Looking around, you realize that you are in a cell; walls on three sides and
+bars on the fourth. It is dark except for light from a torch in the corridor,
+the cell faces. Peeking out, it seems like you are in one cell, in a row of
+many. Looking behind, you see a cracks in the wall. Touching the wall,
+you feel it crumbling. A strong impact will create an opening large enough
+for you to escape",
+		"points": 0,
+		"exits": [
+			{"direction": "escape", "room_id": "Outpost"},
+      {"direction": "break", "room_id": "Outpost"},
+      {"direction": "break wall", "room_id": "Outpost"},
+      {"direction": "punch wall", "room_id": "Outpost"},
+      {"direction": "hit wall", "room_id": "Outpost"},
+      {"direction": "punch", "room_id": "Outpost"},
+      {"direction": "kick wall", "room_id": "Outpost"},
+      {"direction": "kick", "room_id": "Outpost"},
+      {"direction": "shoulder push wall", "room_id": "Outpost"},
+      {"direction": "shoulder push", "room_id": "Outpost"},
+      {"direction": "break out", "room_id": "Outpost"},
+      {"direction": "break and escape", "room_id": "Outpost"},
+      {"direction": "get out", "room_id": "Outpost"},
+      {"direction": "out", "room_id": "Outpost"},
+      {"direction": "leave", "room_id": "Outpost"},
+      {"direction": "strike", "room_id": "Outpost"},
+      {"direction": "strike wall", "room_id": "Outpost"},
+      {"direction": "bust out", "room_id": "Outpost"},
+      {"direction": "break the wall", "room_id": "Outpost"},
+      {"direction": "punch the wall", "room_id": "Outpost"},
+      {"direction": "kick the wall", "room_id": "Outpost"},
+      {"direction": "shoulder push the wall", "room_id": "Outpost"},
+      {"direction": "hit the wall", "room_id": "Outpost"},
+      {"direction": "bash the wall", "room_id": "Outpost"},
+      {"direction": "bash wall", "room_id": "Outpost"},
+      {"direction": "strike the wall", "room_id": "Outpost"}
+		],
+		"treasure": []
+	},
+
+{"id": "Cell Turn",
+		"description":
+"You turn in one sudden movement. You don't see anything, or anyone. While you
+enquire your surrounding, you feel a sharp prick on the side of your neck,
+behind your ear. Everything turns black.
+
+You wake up. You feel that a considerable amount of time has passed.
+Looking around, you realize that you are in a cell; walls on three sides and
+bars on the fourth. It is dark except for light from a torch in the corridor,
+the cell faces. Peeking out, it seems like you are in one cell, in a row of
+many. Looking behind, you see a cracks in the wall. Touching the wall,
+you feel it crumbling. A strong impact will create an opening large enough
+for you to escape",
+		"points": 0,
+		"exits": [
+			{"direction": "escape", "room_id": "Outpost"},
+      {"direction": "break", "room_id": "Outpost"},
+      {"direction": "break wall", "room_id": "Outpost"},
+      {"direction": "punch wall", "room_id": "Outpost"},
+      {"direction": "hit wall", "room_id": "Outpost"},
+      {"direction": "punch", "room_id": "Outpost"},
+      {"direction": "kick wall", "room_id": "Outpost"},
+      {"direction": "kick", "room_id": "Outpost"},
+      {"direction": "shoulder push wall", "room_id": "Outpost"},
+      {"direction": "shoulder push", "room_id": "Outpost"},
+      {"direction": "break out", "room_id": "Outpost"},
+      {"direction": "break and escape", "room_id": "Outpost"},
+      {"direction": "get out", "room_id": "Outpost"},
+      {"direction": "out", "room_id": "Outpost"},
+      {"direction": "leave", "room_id": "Outpost"},
+      {"direction": "strike", "room_id": "Outpost"},
+      {"direction": "strike wall", "room_id": "Outpost"},
+      {"direction": "bust out", "room_id": "Outpost"},
+      {"direction": "break the wall", "room_id": "Outpost"},
+      {"direction": "punch the wall", "room_id": "Outpost"},
+      {"direction": "kick the wall", "room_id": "Outpost"},
+      {"direction": "shoulder push the wall", "room_id": "Outpost"},
+      {"direction": "hit the wall", "room_id": "Outpost"},
+      {"direction": "bash the wall", "room_id": "Outpost"},
+      {"direction": "bash wall", "room_id": "Outpost"},
+      {"direction": "strike the wall", "room_id": "Outpost"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Cell Sound",
+		"description":
+"You follow the sound through the overgrown shrubs. The rustling is getting
+louder and more frequent. As you walk, you feel a sharp blow to the back of your
+head, and hit the ground. Everything turns black.
+
+You wake up. You feel that a considerable amount of time has passed.
+Looking around, you realize that you are in a cell; walls on three sides and
+bars on the fourth. It is dark except for light from a torch in the corridor,
+the cell faces. Peeking out, it seems like you are in one cell, in a row of
+many. Looking behind, you see a cracks in the wall. Touching the wall,
+you feel it crumbling. A strong impact will create an opening large enough
+for you to escape",
+		"points": 0,
+		"exits": [
+			{"direction": "escape", "room_id": "Outpost"},
+			{"direction": "break", "room_id": "Outpost"},
+			{"direction": "break wall", "room_id": "Outpost"},
+			{"direction": "punch wall", "room_id": "Outpost"},
+      {"direction": "hit wall", "room_id": "Outpost"},
+			{"direction": "punch", "room_id": "Outpost"},
+			{"direction": "kick wall", "room_id": "Outpost"},
+			{"direction": "kick", "room_id": "Outpost"},
+			{"direction": "shoulder push wall", "room_id": "Outpost"},
+			{"direction": "shoulder push", "room_id": "Outpost"},
+			{"direction": "break out", "room_id": "Outpost"},
+			{"direction": "break and escape", "room_id": "Outpost"},
+			{"direction": "get out", "room_id": "Outpost"},
+			{"direction": "out", "room_id": "Outpost"},
+			{"direction": "leave", "room_id": "Outpost"},
+			{"direction": "strike", "room_id": "Outpost"},
+			{"direction": "strike wall", "room_id": "Outpost"},
+			{"direction": "bust out", "room_id": "Outpost"},
+      {"direction": "break the wall", "room_id": "Outpost"},
+      {"direction": "punch the wall", "room_id": "Outpost"},
+      {"direction": "kick the wall", "room_id": "Outpost"},
+      {"direction": "shoulder push the wall", "room_id": "Outpost"},
+      {"direction": "hit the wall", "room_id": "Outpost"},
+      {"direction": "bash the wall", "room_id": "Outpost"},
+      {"direction": "bash wall", "room_id": "Outpost"},
+      {"direction": "strike the wall", "room_id": "Outpost"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Outpost",
+		"description":
+"You repeatedly strike the wall. You hear thumps from the corridor; the noise
+has attracted someone's, or something's, attention. You start striking
+faster and harder until you finally create a hole large enough to squeeze
+through. Whatever is heading to the cell, sounds very close now. You crawl out.
+Finding yourelf outside, you immediately start running away from the facility
+and the growls.
+
+You run until you can't anymore.
+
+Now tired, you stop and catch your breath. The fog has set in again and hinders
+your sight. However, you still hear the sound you heard in the corridor.
+You realize, you are facing the entrance to some kind of walled settlement;
+A sign post reads: 'White Orchard'. The Fog seems too thick to navigate.
+You could go toward the entrance to White Orchard",
+		"points": 0,
+		"exits": [
+			{"direction": "entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "entrance to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "entrance white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "fog", "room_id": "Outpost No"},
+			{"direction": "to fog", "room_id": "Outpost No"},
+			{"direction": "through fog", "room_id": "Outpost No"},
+			{"direction": "back", "room_id": "Outpost No"},
+			{"direction": "west", "room_id": "Outpost No"},
+			{"direction": "east", "room_id": "Outpost No"},
+			{"direction": "north", "room_id": "Outpost No"},
+			{"direction": "south", "room_id": "Outpost No"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Outpost No",
+		"description":
+"You head into the fog. You can't see where you are going. You decide to head
+back. The fog seems too thick to navigate.
+You could go toward the entrance to White Orchard",
+		"points": 0,
+		"exits": [
+			{"direction": "entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "entrance to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "entrance of white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to the entrance to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to the entrance of white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "entrance white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard's entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "fog", "room_id": "Outpost No"},
+			{"direction": "to fog", "room_id": "Outpost No"},
+			{"direction": "through fog", "room_id": "Outpost No"},
+			{"direction": "back", "room_id": "Outpost No"},
+			{"direction": "west", "room_id": "Outpost No"},
+			{"direction": "east", "room_id": "Outpost No"},
+			{"direction": "north", "room_id": "Outpost No"},
+			{"direction": "leave", "room_id": "Outpost No"},
+			{"direction": "away", "room_id": "Outpost No"},
+			{"direction": "south", "room_id": "Outpost No"}
+		],
+		"treasure": []
+	},
+
+	{"id": "White Orchard Entrance",
+		"description":
+"You reach the outer walls of the settlement. The fog envelops the settlement.
+The stone walls are covered with ivy. You spot another sigil crudely engraved on
+the wall, not unlike the one on the tile on the lone structure in the middle of
+the abyss. This sigil belongs to the School of the Viper. The wooden
+gate, catches your eye. You see a blade, stuck between the beams of the gate.
+You can enter White Orchard through the gate.",
+		"points": 5,
+		"exits": [
+			{"direction": "enter", "room_id": "Ciri Statue"},
+			{"direction": "enter white orchard", "room_id": "Ciri Statue"},
+			{"direction": "white orchard", "room_id": "Ciri Statue"},
+			{"direction": "to white orchard", "room_id": "Ciri Statue"},
+			{"direction": "enter through gate", "room_id": "Ciri Statue"},
+			{"direction": "gate", "room_id": "Ciri Statue"},
+			{"direction": "use gate", "room_id": "Ciri Statue"},
+			{"direction": "to gate", "room_id": "Ciri Statue"},
+			{"direction": "fog", "room_id": "White Orchard No"},
+			{"direction": "to fog", "room_id": "White Orchard No"},
+			{"direction": "through fog", "room_id": "White Orchard No"},
+			{"direction": "back", "room_id": "White Orchard No"},
+			{"direction": "left", "room_id": "White Orchard No"},
+			{"direction": "forward", "room_id": "White Orchard No"},
+			{"direction": "right", "room_id": "White Orchard No"},
+			{"direction": "south", "room_id": "White Orchard No"},
+			{"direction": "west", "room_id": "White Orchard No"},
+			{"direction": "east", "room_id": "White Orchard No"},
+			{"direction": "north", "room_id": "White Orchard No"},
+			{"direction": "away", "room_id": "White Orchard No"},
+			{"direction": "leave", "room_id": "White Orchard No"},
+			{"direction": "south", "room_id": "White Orchard No"}
+		],
+		"treasure": []
+	},
+
+	{"id": "White Orchard No",
+		"description":
+"You head into the fog. You can't see where you are going. The fog seems too
+thick to navigate. You should head back to the entrance to white orchard.",
+		"points": 0,
+		"exits": [
+			{"direction": "back", "room_id": "White Orchard Entrance"},
+			{"direction": "back to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "back to white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "back to entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "to entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "white orchard entrance", "room_id": "White Orchard Entrance"},
+			{"direction": "white orchard", "room_id": "White Orchard Entrance"},
+			{"direction": "fog", "room_id": "White Orchard No"},
+			{"direction": "to fog", "room_id": "White Orchard No"},
+			{"direction": "through fog", "room_id": "White Orchard No"},
+			{"direction": "west", "room_id": "White Orchard No"},
+			{"direction": "east", "room_id": "White Orchard No"},
+			{"direction": "north", "room_id": "White Orchard No"},
+			{"direction": "south", "room_id": "White Orchard No"},
+			{"direction": "left", "room_id": "White Orchard No"},
+			{"direction": "right", "room_id": "White Orchard No"},
+			{"direction": "forward", "room_id": "White Orchard No"},
+			{"direction": "back", "room_id": "White Orchard No"}
+		],
+		"treasure": []
+	},
+
+{"id": "Ciri Statue",
+		"description":
+"As you walk through White Orchard, you see abandoned structures. Buildings lay
+empty and reclaimed by nature. You call out to enquire for anyone
+who can help, but get no response. You repeatedly sight the sigil of the School
+of the Viper, crudely marking the bare walls around the village.
+
+As you walk, the stony streets widen and you see remnants of what seem like a
+battle. Old rusty armaments lay scattered, trenches and fire stains pepper the
+ground, and siege machines lay dormant, covered in overgrown foliage.
+
+As the sun sets, you find yourself in a large courtyard. At the center of the
+courtyard stands a statue made of stone. The statue depicts a woman, in an
+otherworldly seeming suit of battle armor, clenching a hilt in her right hand,
+on her side. On her shoulder, looking just as mighty, perches a swallow.
+You notice an engraving below the statue, that reads
+'The Lady of Space and Time'.
+
+Looking around further, you spot the entrance to a burned down book store to
+your right. You also see an alley leading deeper into the village, behind you.",
+		"points": 5,
+		"exits": [
+				{"direction": "book store", "room_id": "Book Store"},
+				{"direction": "enter book store", "room_id": "Book Store"},
+				{"direction": "enter store", "room_id": "Book Store"},
+				{"direction": "book store", "room_id": "Book Store"},
+				{"direction": "to book store", "room_id": "Book Store"},
+				{"direction": "right", "room_id": "Book Store"},
+				{"direction": "right book store", "room_id": "Book Store"},
+				{"direction": "to right book store", "room_id": "Book Store"},
+				{"direction": "to book store right", "room_id": "Book Store"},
+				{"direction": "book", "room_id": "Book Store"},
+				{"direction": "to book", "room_id": "Book Store"},
+				{"direction": "right book store", "room_id": "Book Store"},
+				{"direction": "alley", "room_id": "Battlefield"},
+				{"direction": "to alley", "room_id": "Battlefield"},
+				{"direction": "through alley", "room_id": "Battlefield"},
+				{"direction": "via alley", "room_id": "Battlefield"},
+				{"direction": "behind", "room_id": "Battlefield"},
+				{"direction": "down the alley", "room_id": "Battlefield"},
+				{"direction": "enter alley", "room_id": "Battlefield"},
+				{"direction": "down alley", "room_id": "Battlefield"}
+			],
+		"treasure": ["blade"]
+	},
+
+	{"id": "Ciri Statue Back",
+		"description":
+"You are back at the courtyard with the statue. The statue depicts a woman, in
+an otherworldly seeming suit of battle armor, clenching a hilt in her right
+hand, on her side. The swallow seems to have flown away. The engraving below the
+statue reads 'The Lady of Space and Time'.
+
+Looking around further, you spot the entrance to a burned down book store to
+your right. You also see an alley leading deeper into the village, behind you.",
+		"points": 0,
+		"exits": [
+				{"direction": "book store", "room_id": "Book Store"},
+				{"direction": "enter book store", "room_id": "Book Store"},
+				{"direction": "enter store", "room_id": "Book Store"},
+				{"direction": "book store", "room_id": "Book Store"},
+				{"direction": "to book store", "room_id": "Book Store"},
+				{"direction": "right", "room_id": "Book Store"},
+				{"direction": "right book store", "room_id": "Book Store"},
+				{"direction": "to right book store", "room_id": "Book Store"},
+				{"direction": "to book store right", "room_id": "Book Store"},
+				{"direction": "book", "room_id": "Book Store"},
+				{"direction": "to book", "room_id": "Book Store"},
+				{"direction": "right book store", "room_id": "Book Store"},
+				{"direction": "alley", "room_id": "Battlefield"},
+				{"direction": "to alley", "room_id": "Battlefield"},
+				{"direction": "through alley", "room_id": "Battlefield"},
+				{"direction": "via alley", "room_id": "Battlefield"},
+				{"direction": "back", "room_id": "Battlefield"},
+				{"direction": "behind", "room_id": "Battlefield"},
+				{"direction": "down the alley", "room_id": "Battlefield"},
+				{"direction": "enter alley", "room_id": "Battlefield"},
+				{"direction": "down alley", "room_id": "Battlefield"}
+			],
+		"treasure": ["blade"]
+	},
+
+	{"id": "Book Store",
+		"description":
+"You are now inside the book store. Most books are burnt to a point of
+illegibility. You do however, find some intact noteworthy texts 'The Conjunction
+of the Spheres', 'Lands of the North: Velen' and 'The Lonesome World Guide to
+Ard Skellig' all lie, unharmed, in the rubble.
+
+You further notice a portrait of a family; perhaps the owner's family. A child,
+clenching on to a toy horse catches your eye. The portrait seems to have the
+statue in the courtyard, in the background. The portrait is also signed.
+The signature reads 'Dandelion'.",
+		"points": 5,
+		"exits": [
+			{"direction": "back", "room_id": "Ciri Statue Back"},
+			{"direction": "to courtyard", "room_id": "Ciri Statue Back"},
+			{"direction": "to statue", "room_id": "Ciri Statue Back"},
+			{"direction": "back to courtyard", "room_id": "Ciri Statue Back"},
+			{"direction": "back to statue", "room_id": "Ciri Statue Back"},
+			{"direction": "return", "room_id": "Ciri Statue Back"},
+			{"direction": "leave book store", "room_id": "Ciri Statue Back"},
+			{"direction": "leave", "room_id": "Ciri Statue Back"},
+			{"direction": "leave store", "room_id": "Ciri Statue Back"},
+			{"direction": "exit book store", "room_id": "Ciri Statue Back"},
+			{"direction": "exit", "room_id": "Ciri Statue Back"},
+			{"direction": "exit store", "room_id": "Ciri Statue Back"}
+			],
+		"treasure": ["toy horse"]
+	},
+
+	{"id": "Battlefield",
+		"description":
+"The alley leads to the village square, which seems to have seen the greatest
+share of the battle. The ground and walls have discernible stains of blood and
+fire all over. Spears, axes and swords lie half burried in the ground,
+so covered in shrubs and caked in mud, they seem a part of it.
+
+Amidst the remnants of this chaos of past, a small toy horse catches your eye.
+It seems to have survived the catastrophie that befell White Orchard.
+
+Aside from the alley from the courtyard, you see only one path out of the
+square; a towering gate. The gate is high, disabling you from peeking ahead.",
+		"points": 5,
+		"exits": [
+			{"direction": "gate", "room_id": "Boss Begin"},
+			{"direction": "towering gate", "room_id": "Boss Begin"},
+			{"direction": "to gate", "room_id": "Boss Begin"},
+			{"direction": "to towering gate", "room_id": "Boss Begin"},
+			{"direction": "through gate", "room_id": "Boss Begin"},
+			{"direction": "through towering gate", "room_id": "Boss Begin"},
+			{"direction": "enter", "room_id": "Boss Begin"},
+			{"direction": "enter through towering gate", "room_id": "Boss Begin"},
+			{"direction": "enter through gate", "room_id": "Boss Begin"},
+			{"direction": "enter through towering gate", "room_id": "Boss Begin"},
+			{"direction": "open towering gate", "room_id": "Boss Begin"},
+			{"direction": "open gate", "room_id": "Boss Begin"},
+			{"direction": "back", "room_id": "Ciri Statue Back"},
+			{"direction": "to courtyard", "room_id": "Ciri Statue Back"},
+			{"direction": "to statue", "room_id": "Ciri Statue Back"},
+			{"direction": "back to courtyard", "room_id": "Ciri Statue Back"},
+			{"direction": "back to statue", "room_id": "Ciri Statue Back"},
+			{"direction": "return", "room_id": "Ciri Statue Back"},
+			{"direction": "leave square", "room_id": "Ciri Statue Back"},
+			{"direction": "leave village square", "room_id": "Ciri Statue Back"},
+			{"direction": "leave", "room_id": "Ciri Statue Back"},
+			{"direction": "exit square", "room_id": "Ciri Statue Back"},
+			{"direction": "exit", "room_id": "Ciri Statue Back"},
+			{"direction": "exit village square", "room_id": "Ciri Statue Back"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Boss Begin",
+		"description":
+"You push the gate. It feels heavy, but after some exertion, you manage to
+enter, what on first glace looks like, a cemetery. You see unmarked tombstones
+signifying graves. As you walk a little further, you notice the dusk setting in.
+It will be dark soon. You feel uncomfortable and decide to head back to the
+courtyard. You walk fast.
+
+The gate you entered through is finally in sight. You look back to notice thick
+fog closing in behind you. You walk faster toward the gate to notice it slowly
+closing on you. You run toward it, but its too late. You jerk the gate to force
+it to open, and knock down some sort of bound, unmarked book that was, for some
+reason wedged in a crack on the gate. The gate however, does not budge.
+There is no going back.
+
+
+You are at the gate, being closed in by the fog.",
+		"points": 0,
+		"exits": [
+			{"direction": "fog", "room_id": "Boss Appear"},
+			{"direction": "to fog", "room_id": "Boss Appear"},
+			{"direction": "into fog", "room_id": "Boss Appear"},
+			{"direction": "through fog", "room_id": "Boss Appear"},
+			{"direction": "west", "room_id": "Boss Appear"},
+			{"direction": "east", "room_id": "Boss Appear"},
+			{"direction": "north", "room_id": "Boss Appear"},
+			{"direction": "south", "room_id": "Boss Appear"},
+			{"direction": "left", "room_id": "Boss Appear"},
+			{"direction": "right", "room_id": "Boss Appear"},
+			{"direction": "forward", "room_id": "Boss Appear"},
+			{"direction": "back", "room_id": "Boss Appear"},
+			{"direction": "navigate", "room_id": "Boss Appear"},
+			{"direction": "find exit", "room_id": "Boss Appear"},
+			{"direction": "leave", "room_id": "Boss Appear"},
+			{"direction": "go", "room_id": "Boss Appear"}
+
+			],
+		"treasure": ["the conjunction of the spheres"]
+	},
+
+	{"id": "Boss Appear",
+		"description":
+"You walk into the fog. You don't know where you are going. You hear the growl
+from the jail cell. You start walking faster, your destination unknown.
+
+A loud sound, the child of a roar and a shriek, erupts.
+
+You are stopped by the silhouette of something unnatural in the fog. The
+creature emerges out of the fog. The creature is larger than you, and has an
+unusual bone structure. You cannot make out much else; the dark hinders sight.
+It roars creating a cracking sound that floods your ears. You see a large rock
+at your feet. Do you run or attack at the creature ?
+",
+		"points": 0,
+		"exits": [
+			{"direction": "run", "room_id": "Boss Stage 1"},
+			{"direction": "leave", "room_id": "Boss Stage 1"},
+			{"direction": "dash", "room_id": "Boss Stage 1"},
+			{"direction": "run away", "room_id": "Boss Stage 1"},
+			{"direction": "away", "room_id": "Boss Stage 1"},
+			{"direction": "back", "room_id": "Boss Stage 1"},
+			{"direction": "left", "room_id": "Boss Stage 1"},
+			{"direction": "right", "room_id": "Boss Stage 1"},
+			{"direction": "attack", "room_id": "Boss Death Phys Attack"},
+			{"direction": "attack with rock", "room_id": "Boss Death Rock"},
+			{"direction": "attack with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "throw rock", "room_id": "Boss Death Rock"},
+			{"direction": "throw the rock", "room_id": "Boss Death Rock"},
+			{"direction": "rock", "room_id": "Boss Death Rock"},
+			{"direction": "hit", "room_id": "Boss Death Phys Attack"},
+			{"direction": "hit with rock", "room_id": "Boss Death Rock"},
+			{"direction": "hit with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "strike", "room_id": "Boss Death Phys Attack"},
+			{"direction": "strike with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "strike with rock", "room_id": "Boss Death Rock"},
+			{"direction": "charge", "room_id": "Boss Death Phys Attack"},
+			{"direction": "kick", "room_id": "Boss Death Phys Attack"},
+			{"direction": "punch", "room_id": "Boss Death Phys Attack"},
+			{"direction": "attack creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "attack the creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "attack creature with rock", "room_id": "Boss Death Rock"},
+			{"direction": "attack the creature with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "throw rock at creature", "room_id": "Boss Death Rock"},
+			{"direction": "throw rock at the creature", "room_id": "Boss Death Rock"},
+			{"direction": "throw the rock at the creature", "room_id": "Boss Death Rock"},
+			{"direction": "hit creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "hit the creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "hit creature with rock", "room_id": "Boss Death Rock"},
+			{"direction": "hit the creature with rock", "room_id": "Boss Death Rock"},
+			{"direction": "hit the creature with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "strike creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "strike the creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "strike creature with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "strike the creature with the rock", "room_id": "Boss Death Rock"},
+			{"direction": "strike creature with rock", "room_id": "Boss Death Rock"},
+			{"direction": "charge creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "charge the creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "kick creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "kick the creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "punch creature", "room_id": "Boss Death Phys Attack"},
+			{"direction": "punch the creature", "room_id": "Boss Death Phys Attack"}
+			],
+		"treasure": []
+	},
+
+	{"id": "Boss Death Rock",
+		"description":
+"You go for the rock. As you grab the stone and look up to aim, the creature
+stares you in the face.
+
+                     '''::;       '::.
+                      ;'..::::..   ,.;:::
+                          .;.;:::::::::::;.;.
+                      ,.:::::'''::::'  :::':::;...;.....'''
+                     :::'       '::.   :;   ''''''''
+                    ,::'          :::   ::;      ..
+                   ,::'            :::  :::  ,..:::::::'''
+       ..;:;      ,;:'             ::;;.::::::::::'''
+     ;;::'::;     ;:''              ;::::::::::::::
+   ,::''   :::   ;::              ;:::::::::::::::;::::
+  :::'      ::. ,::'             ;::::::::::::::::::'
+  ::'       '::,;:'             ,:::''  ;:::::::::::  ,...
+ ;::         :::::          ...::::;.  ;::::::::::::::::'
+ :::         ::::'    ,.:..:::::::::::::::::::::::::::'
+ :::        .::::.  ;;:::::::::::::::::::::::::::::::;:  ...
+ ::'     ,;::::::::::::::::::::::::::::::::::::::::::::::::'
+ ':;    :;:''::::::::::::::::::::::'':::::::::::::::::::'
+  ::;   :::  ,:::::::::::::'''::''',;;::::::::::::::::::::
+  ':::  '::..:::::::::::'    ' .;;::::::::::::::::::::::.
+   '::;  ''::::::''  '':   .....;::::::::::::::::::::::::::
+     ::.   '''::   ..    .::::::::::::::::::::::::::::::::
+     '::.         .;:;.::::::''    ''''''::::::::::::::::
+      ':;.   ,;::::::::''                ::::::::::::::::
+       '::   '::::::::'                    ::::::::::::::::
+        ::    '':: ':;.                    ::::::::::::::::
+        ::      '::  '''                  ::::::::::::::::
+        ;'       '':                     ::::::::::::::::::
+        :                               ;::::::::::::::::::
+       :'                              ''''''''''''''''''''
+
+You feel an uncomfortable force around your neck...
+
+Thank you for playing.
+Enter 'Quit' to exit.",
+		"points": 0,
+		"exits": [],
+		"treasure": []
+	},
+
+	{"id": "Boss Death Phys Attack",
+		"description":
+"You attempt to attack the creature, but realize that you have struck nothing
+but air. You look around for the creature, to find it staring you in the face.
+
+                     '''::;       '::.
+                      ;'..::::..   ,.;:::
+                          .;.;:::::::::::;.;.
+                      ,.:::::'''::::'  :::':::;...;.....'''
+                     :::'       '::.   :;   ''''''''
+                    ,::'          :::   ::;      ..
+                   ,::'            :::  :::  ,..:::::::'''
+       ..;:;      ,;:'             ::;;.::::::::::'''
+     ;;::'::;     ;:''              ;::::::::::::::
+   ,::''   :::   ;::              ;:::::::::::::::;::::
+  :::'      ::. ,::'             ;::::::::::::::::::'
+  ::'       '::,;:'             ,:::''  ;:::::::::::  ,...
+ ;::         :::::          ...::::;.  ;::::::::::::::::'
+ :::         ::::'    ,.:..:::::::::::::::::::::::::::'
+ :::        .::::.  ;;:::::::::::::::::::::::::::::::;:  ...
+ ::'     ,;::::::::::::::::::::::::::::::::::::::::::::::::'
+ ':;    :;:''::::::::::::::::::::::'':::::::::::::::::::'
+  ::;   :::  ,:::::::::::::'''::''',;;::::::::::::::::::::
+  ':::  '::..:::::::::::'    ' .;;::::::::::::::::::::::.
+   '::;  ''::::::''  '':   .....;::::::::::::::::::::::::::
+     ::.   '''::   ..    .::::::::::::::::::::::::::::::::
+     '::.         .;:;.::::::''    ''''''::::::::::::::::
+      ':;.   ,;::::::::''                ::::::::::::::::
+       '::   '::::::::'                    ::::::::::::::::
+        ::    '':: ':;.                    ::::::::::::::::
+        ::      '::  '''                  ::::::::::::::::
+        ;'       '':                     ::::::::::::::::::
+        :                               ;::::::::::::::::::
+       :'                              ''''''''''''''''''''
+
+You feel an uncomfortable force around your neck...
+
+Thank you for playing.
+Enter 'Quit' to exit.",
+		"points": 0,
+		"exits": [],
+		"treasure": []
+	},
+
+	{"id": "Boss Stage 1",
+		"description":
+"You run, away from the creature and the gate. The darkness and the fog prevent
+you from seeing where you re going. The occasional torches that light up parts
+of the cemetery are your only source of direction.
+
+Your legs are starting to give. You arrive at the entrance to a shed. It looks
+abandoned. Will you hide or keep running",
+		"points": 20,
+		"exits": [
+			{"direction": "run", "room_id": "Boss Death Run"},
+			{"direction": "leave", "room_id": "Boss Death Run"},
+			{"direction": "dash", "room_id": "Boss Death Run"},
+			{"direction": "run away", "room_id": "Boss Death Run"},
+			{"direction": "away", "room_id": "Boss Death Run"},
+			{"direction": "back", "room_id": "Boss Death Run"},
+			{"direction": "left", "room_id": "Boss Death Run"},
+			{"direction": "right", "room_id": "Boss Death Run"},
+			{"direction": "keep running", "room_id": "Boss Death Run"},
+			{"direction": "keep going", "room_id": "Boss Death Run"},
+			{"direction": "keep on going", "room_id": "Boss Death Run"},
+			{"direction": "keep on running", "room_id": "Boss Death Run"},
+
+			{"direction": "hide", "room_id": "Boss Stage 2"},
+			{"direction": "hide in shed", "room_id": "Boss Stage 2"},
+			{"direction": "enter shed", "room_id": "Boss Stage 2"},
+			{"direction": "shed", "room_id": "Boss Stage 2"},
+			{"direction": "in shed", "room_id": "Boss Stage 2"},
+			{"direction": "to shed", "room_id": "Boss Stage 2"},
+			{"direction": "inside", "room_id": "Boss Stage 2"},
+			{"direction": "inside shed", "room_id": "Boss Stage 2"},
+			{"direction": "hide inside shed", "room_id": "Boss Stage 2"},
+			{"direction": "enter", "room_id": "Boss Stage 2"},
+			{"direction": "hide in the shed", "room_id": "Boss Stage 2"},
+			{"direction": "enter the shed", "room_id": "Boss Stage 2"},
+			{"direction": "shed", "room_id": "Boss Stage 2"},
+			{"direction": "in the shed", "room_id": "Boss Stage 2"},
+			{"direction": "to the shed", "room_id": "Boss Stage 2"},
+			{"direction": "inside", "room_id": "Boss Stage 2"},
+			{"direction": "inside the shed", "room_id": "Boss Stage 2"},
+			{"direction": "hide inside the shed", "room_id": "Boss Stage 2"},
+			{"direction": "enter the shed", "room_id": "Boss Stage 2"}
+		],
+		"treasure": []
+	},
+
+	{"id": "Boss Death Run",
+		"description":
+"You keep running, until you can't anymore. You don't hear the creature.
+You close your eyes to catch your bredth.
+
+You open your eyes.
+
+                     '''::;       '::.
+                      ;'..::::..   ,.;:::
+                          .;.;:::::::::::;.;.
+                      ,.:::::'''::::'  :::':::;...;.....'''
+                     :::'       '::.   :;   ''''''''
+                    ,::'          :::   ::;      ..
+                   ,::'            :::  :::  ,..:::::::'''
+       ..;:;      ,;:'             ::;;.::::::::::'''
+     ;;::'::;     ;:''              ;::::::::::::::
+   ,::''   :::   ;::              ;:::::::::::::::;::::
+  :::'      ::. ,::'             ;::::::::::::::::::'
+  ::'       '::,;:'             ,:::''  ;:::::::::::  ,...
+ ;::         :::::          ...::::;.  ;::::::::::::::::'
+ :::         ::::'    ,.:..:::::::::::::::::::::::::::'
+ :::        .::::.  ;;:::::::::::::::::::::::::::::::;:  ...
+ ::'     ,;::::::::::::::::::::::::::::::::::::::::::::::::'
+ ':;    :;:''::::::::::::::::::::::'':::::::::::::::::::'
+  ::;   :::  ,:::::::::::::'''::''',;;::::::::::::::::::::
+  ':::  '::..:::::::::::'    ' .;;::::::::::::::::::::::.
+   '::;  ''::::::''  '':   .....;::::::::::::::::::::::::::
+     ::.   '''::   ..    .::::::::::::::::::::::::::::::::
+     '::.         .;:;.::::::''    ''''''::::::::::::::::
+      ':;.   ,;::::::::''                ::::::::::::::::
+       '::   '::::::::'                    ::::::::::::::::
+        ::    '':: ':;.                    ::::::::::::::::
+        ::      '::  '''                  ::::::::::::::::
+        ;'       '':                     ::::::::::::::::::
+        :                               ;::::::::::::::::::
+       :'                              ''''''''''''''''''''
+
+You feel an uncomfortable force around your neck...
+
+Thank you for playing.
+Enter 'Quit' to exit.",
+		"points": 0,
+		"exits": [],
+		"treasure": []
+	},
+
+	{"id": "Boss Stage 2",
+		"description":
+"You head into the shed and pin yourself behind a wooden wall on the far end of
+the shed. You hear the creature shriek, louder than before. The ground rumbles.
+The tremors bring you to the ground. As you get back up on your feet, you
+notice a mudied note on the ground.
+
+You now start to hear thumping sounds The creature is in the shed, heading your
+way. You spot a gap in the wall across the room, which might lead outside, but
+you can't be certain. Will you stay hidden or run to the gap ?",
+		"points":50,
+		"exits": [
+			{"direction": "run", "room_id": "Boss Stage 3"},
+			{"direction": "run to gap", "room_id": "Boss Stage 3"},
+			{"direction": "run to the gap", "room_id": "Boss Stage 3"},
+			{"direction": "run to the gap in the wall", "room_id": "Boss Stage 3"},
+			{"direction": "run to gap in wall", "room_id": "Boss Stage 3"},
+			{"direction": "dash", "room_id": "Boss Stage 3"},
+			{"direction": "dash to gap", "room_id": "Boss Stage 3"},
+			{"direction": "dash to the gap", "room_id": "Boss Stage 3"},
+			{"direction": "dash to the gap in the wall", "room_id": "Boss Stage 3"},
+			{"direction": "dash to gap in wall", "room_id": "Boss Stage 3"},
+			{"direction": "go to gap", "room_id": "Boss Stage 3"},
+			{"direction": "go to the gap", "room_id": "Boss Stage 3"},
+			{"direction": "go to the gap in the wall", "room_id": "Boss Stage 3"},
+			{"direction": "go to gap in wall", "room_id": "Boss Stage 3"},
+
+
+			{"direction": "hide", "room_id": "Boss Hide"},
+			{"direction": "hide in shed", "room_id": "Boss Hide"},
+			{"direction": "shed", "room_id": "Boss Hide"},
+			{"direction": "stay in shed", "room_id": "Boss Hide"},
+			{"direction": "stay inside", "room_id": "Boss Hide"},
+			{"direction": "stay inside shed", "room_id": "Boss Hide"},
+			{"direction": "hide inside shed", "room_id": "Boss Hide"},
+			{"direction": "keep hiding", "room_id": "Boss Hide"},
+			{"direction": "keep hiding in shed", "room_id": "Boss Hide"},
+			{"direction": "keep hiding inside shed", "room_id": "Boss Hide"},
+			{"direction": "stay in the shed", "room_id": "Boss Hide"},
+			{"direction": "stay inside", "room_id": "Boss Hide"},
+			{"direction": "stay inside the shed", "room_id": "Boss Hide"},
+			{"direction": "hide inside the shed", "room_id": "Boss Hide"},
+			{"direction": "keep hiding", "room_id": "Boss Hide"},
+			{"direction": "keep hiding in the shed", "room_id": "Boss Hide"},
+			{"direction": "keep hiding inide the shed", "room_id": "Boss Hide"},
+			{"direction": "stay hidden in shed", "room_id": "Boss Hide"},
+			{"direction": "stay hidden in the shed", "room_id": "Boss Hide"},
+			{"direction": "stay hidden", "room_id": "Boss Hide"},
+			{"direction": "hidden", "room_id": "Boss Hide"}
+					],
+		"treasure": []
+	},
+
+{"id": "Boss Hide",
+		"description":
+"You keep yourself pinned to the wall, holding your breath.
+You don't hear the creature.
+You close your eyes in relief.
+
+You open your eyes.
+
+                     '''::;       '::.
+                      ;'..::::..   ,.;:::
+                          .;.;:::::::::::;.;.
+                      ,.:::::'''::::'  :::':::;...;.....'''
+                     :::'       '::.   :;   ''''''''
+                    ,::'          :::   ::;      ..
+                   ,::'            :::  :::  ,..:::::::'''
+       ..;:;      ,;:'             ::;;.::::::::::'''
+     ;;::'::;     ;:''              ;::::::::::::::
+   ,::''   :::   ;::              ;:::::::::::::::;::::
+  :::'      ::. ,::'             ;::::::::::::::::::'
+  ::'       '::,;:'             ,:::''  ;:::::::::::  ,...
+ ;::         :::::          ...::::;.  ;::::::::::::::::'
+ :::         ::::'    ,.:..:::::::::::::::::::::::::::'
+ :::        .::::.  ;;:::::::::::::::::::::::::::::::;:  ...
+ ::'     ,;::::::::::::::::::::::::::::::::::::::::::::::::'
+ ':;    :;:''::::::::::::::::::::::'':::::::::::::::::::'
+  ::;   :::  ,:::::::::::::'''::''',;;::::::::::::::::::::
+  ':::  '::..:::::::::::'    ' .;;::::::::::::::::::::::.
+   '::;  ''::::::''  '':   .....;::::::::::::::::::::::::::
+     ::.   '''::   ..    .::::::::::::::::::::::::::::::::
+     '::.         .;:;.::::::''    ''''''::::::::::::::::
+      ':;.   ,;::::::::''                ::::::::::::::::
+       '::   '::::::::'                    ::::::::::::::::
+        ::    '':: ':;.                    ::::::::::::::::
+        ::      '::  '''                  ::::::::::::::::
+        ;'       '':                     ::::::::::::::::::
+        :                               ;::::::::::::::::::
+       :'                              ''''''''''''''''''''
+
+You feel an uncomfortable force around your neck...
+
+Thank you for playing.
+Enter 'Quit' to exit.",
+		"points": 0,
+		"exits": [],
+		"treasure": []
+	},
+
+	{"id": "Boss Stage 3",
+		"description":
+"You dash toward the gap. The creature sees you and leaps behind you, but the
+gap isn't large enough for the creature. The creature tries to force itself
+through the wall, but destabilizes the structure. The shed falls on it, pinning
+it to the ground.
+
+You walk, until the shed is out of sight. You sit down on the grass. The fog has
+cleared and dawn arrives.
+
+A swallow glides in to perch on your shoulder. In what seems like a flash,
+you awake.
+
+'You survived the Trial of the Grasses. Congratulations Initiate' - Ciri
+
+
+
+
+
+Thank you for playing.
+Enter 'Quit' to exit.
+",
+		"points": 100,
+		"exits": [],
+		"treasure": ["blade"]
+	}
+],
+
+	"start_room": "Start 1",
+
+
+
+	"items": [
+
+		{
+		"id": "blade",
+		"description":
+"an old, worn down, but exquisitely crafted blade.
+It bears an engraving, which reads 'Zireael'.
+The blade, maybe once part of a sword, lacks a hilt",
+		"points": 10
+	},
+
+	{
+		"id": "the conjunction of the spheres",
+		"description":
+"a book from the northern kingdoms that talks about the phenomana that brought
+magic and monsters to our world",
+		"points": 10
+	},
+
+	{
+		"id": "lands of the north: velen",
+		"description":
+"a book by a Redanian talking about life in Velen, as an outsider",
+		"points": 10
+	},
+
+	{
+		"id": "the lonesome world guide to ard skellig",
+		"description":
+"a travel guide describing the wonders and secrets of the Ard, and the life of
+the islandes that live there",
+		"points": 10
+	},
+
+	{
+		"id": "toy horse",
+		"description":
+"a wooden horse of Nilgaardian craftsmanship",
+		"points": 10
+	},
+
+	{
+		"id": "book",
+		"description":
+"a journal belonging to a druid named Ermion. Most pages have either been ripped
+out, or the writing not clear enough to decipher. Scrawled in large bold
+letters, in the common tounge, on the last page, the text reads
+'It's an Ekimmara!'.",
+		"points": 10
+	},
+
+	{
+		"id": "note",
+		"description":
+"a page from a journal. The writing is mostly illegible, but you can discern the
+the '..the north needs Witchers...*illegible text* monsters at our door
+*illegible text*...the schools battle...*illegible text*...after Vesemir's
+passing, no one...'",
+		"points": 10
+	}
+
+	],
+
+	"start_inv": [],
+
+
+	"start_locations": [
+		{"room": "White Orchard Entrance", "item": "blade"},
+		{"room": "Book Store", "item": "the conjunction of the spheres"},
+		{"room": "Book Store", "item": "lands of the north: velen"},
+		{"room": "Book Store", "item": "the lonesome world guide to ard skellig"},
+		{"room": "Battlefield", "item": "toy horse"},
+		{"room": "Boss Begin", "item": "book"},
+		{"room": "Boss Stage 2", "item": "note"}
+	]
+
+
+
+}
