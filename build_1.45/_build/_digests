@@ -1,0 +1,8 @@
+"Resource: /home/arjan/III/build_1.45/III.ml": "\">N\130\255\146\183\026\251\149\159\184\209\155\015{"
+"Rule: ocaml dependencies ml (%=game )": "Q\234\149\1790\192\193\198\182\157\031A*\019\234:"
+"Rule: ocaml dependencies ml (%=III )": "\2160sd\007\182E\149d=*xCi@\212"
+"Rule: ocaml: ml -> cmo & cmi (%=III )": "\003D\r\137\007o$P%\234B\2272n\185\186"
+"Rule: ocaml: ml -> cmo & cmi (%=game )": "7J{\133B\164:\229\021\200\241?\223\018f\213"
+"Resource: /home/arjan/III/build_1.45/game.ml": "\b\131\1411\1574gf\158\193\253*\025TU\243"
+"Resource: /home/arjan/III/build_1.45/III.byte": "\163\241Pqn\195,\220\195i\028.{G\030\200"
+"Rule: ocaml: cmo* -> byte (%=III )": "UUG\021\019\150\007\203\219\231\235\190g\201Kn"
